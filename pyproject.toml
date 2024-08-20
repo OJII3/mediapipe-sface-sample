@@ -1,0 +1,31 @@
+[project]
+name = "mediapipe-sface-sample"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "ojii3", email = "84656786+OJII3@users.noreply.github.com" }
+]
+dependencies = [
+    "opencv-python>=4.10.0.84",
+    "mediapipe>=0.10.14",
+    "onnxruntime>=1.19.0",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mediapipe_sface_sample"]
+
+[tool.rye.scripts]
+main = "python src/mediapipe_sface_sample/sample.py"
