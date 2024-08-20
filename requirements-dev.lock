@@ -18,34 +18,48 @@ cffi==1.17.0
     # via sounddevice
 coloredlogs==15.0.1
     # via onnxruntime
-contourpy==1.2.1
+contourpy==1.1.1
     # via matplotlib
 cycler==0.12.1
     # via matplotlib
+filelock==3.15.4
+    # via torch
+    # via triton
 flatbuffers==24.3.25
     # via mediapipe
     # via onnxruntime
 fonttools==4.53.1
     # via matplotlib
+fsspec==2024.6.1
+    # via torch
 humanfriendly==10.0
     # via coloredlogs
-jax==0.4.31
-    # via mediapipe
-jaxlib==0.4.31
+importlib-metadata==8.3.0
     # via jax
+importlib-resources==6.4.3
+    # via matplotlib
+jax==0.4.13
     # via mediapipe
+jaxlib==0.4.13
+    # via mediapipe
+jinja2==3.1.4
+    # via torch
 kiwisolver==1.4.5
     # via matplotlib
-matplotlib==3.9.2
+markupsafe==2.1.5
+    # via jinja2
+matplotlib==3.7.5
     # via mediapipe
-mediapipe==0.10.14
+mediapipe==0.10.11
     # via mediapipe-sface-sample
-ml-dtypes==0.4.0
+ml-dtypes==0.2.0
     # via jax
     # via jaxlib
 mpmath==1.3.0
     # via sympy
-numpy==2.1.0
+networkx==3.1
+    # via torch
+numpy==1.24.4
     # via contourpy
     # via jax
     # via jaxlib
@@ -57,6 +71,34 @@ numpy==2.1.0
     # via opencv-python
     # via opt-einsum
     # via scipy
+nvidia-cublas-cu12==12.1.3.1
+    # via nvidia-cudnn-cu12
+    # via nvidia-cusolver-cu12
+    # via torch
+nvidia-cuda-cupti-cu12==12.1.105
+    # via torch
+nvidia-cuda-nvrtc-cu12==12.1.105
+    # via torch
+nvidia-cuda-runtime-cu12==12.1.105
+    # via torch
+nvidia-cudnn-cu12==9.1.0.70
+    # via torch
+nvidia-cufft-cu12==11.0.2.54
+    # via torch
+nvidia-curand-cu12==10.3.2.106
+    # via torch
+nvidia-cusolver-cu12==11.4.5.107
+    # via torch
+nvidia-cusparse-cu12==12.1.0.106
+    # via nvidia-cusolver-cu12
+    # via torch
+nvidia-nccl-cu12==2.20.5
+    # via torch
+nvidia-nvjitlink-cu12==12.6.20
+    # via nvidia-cusolver-cu12
+    # via nvidia-cusparse-cu12
+nvidia-nvtx-cu12==12.1.105
+    # via torch
 onnxruntime==1.19.0
     # via mediapipe-sface-sample
 opencv-contrib-python==4.10.0.84
@@ -70,7 +112,7 @@ packaging==24.1
     # via onnxruntime
 pillow==10.4.0
     # via matplotlib
-protobuf==4.25.4
+protobuf==3.20.3
     # via mediapipe
     # via onnxruntime
 pycparser==2.22
@@ -79,7 +121,7 @@ pyparsing==3.1.2
     # via matplotlib
 python-dateutil==2.9.0.post0
     # via matplotlib
-scipy==1.14.0
+scipy==1.10.1
     # via jax
     # via jaxlib
 six==1.16.0
@@ -88,3 +130,13 @@ sounddevice==0.5.0
     # via mediapipe
 sympy==1.13.2
     # via onnxruntime
+    # via torch
+torch==2.4.0
+    # via mediapipe
+triton==3.0.0
+    # via torch
+typing-extensions==4.12.2
+    # via torch
+zipp==3.20.0
+    # via importlib-metadata
+    # via importlib-resources
